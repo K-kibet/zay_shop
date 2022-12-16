@@ -11,13 +11,13 @@ function Single() {
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState('');
-  const [size, setSize] = useState('');
+  const [size, setSize] = useState(''); 
   const dispatch = useDispatch();
 
   useEffect(() => {
       const fetchProduct = async () => {
           try {
-              const res = await publicRequest.get('/products/find/' + id)
+              const res = await publicRequest.get('/products/' + id)
               setProduct(res.data);
           } catch (error) {
               console.log(error);

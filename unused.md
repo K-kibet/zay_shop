@@ -1,0 +1,31 @@
+file:////home/kibet/zay_shop/README.md
+file:////home/kibet/zay_shop/Screenshot 2022-11-23 2.31.56 PM.png
+file:////home/kibet/zay_shop/Screenshot 2022-11-23 2.32.14 PM.png
+file:////home/kibet/zay_shop/src/.env
+file:////home/kibet/zay_shop/src/App.js
+file:////home/kibet/zay_shop/src/App1.css
+file:////home/kibet/zay_shop/src/assets/ajax-loader.gif
+file:////home/kibet/zay_shop/src/assets/apple-icon.png
+file:////home/kibet/zay_shop/src/assets/category_img_01.jpg
+file:////home/kibet/zay_shop/src/assets/category_img_02.jpg
+file:////home/kibet/zay_shop/src/assets/category_img_03.jpg
+file:////home/kibet/zay_shop/src/assets/feature_prod_02.jpg
+file:////home/kibet/zay_shop/src/assets/feature_prod_03.jpg
+file:////home/kibet/zay_shop/src/assets/product_single_01.jpg
+file:////home/kibet/zay_shop/src/assets/shop_02.jpg
+file:////home/kibet/zay_shop/src/assets/shop_03.jpg
+file:////home/kibet/zay_shop/src/assets/shop_04.jpg
+file:////home/kibet/zay_shop/src/assets/shop_05.jpg
+file:////home/kibet/zay_shop/src/assets/shop_06.jpg
+file:////home/kibet/zay_shop/src/assets/shop_07.jpg
+file:////home/kibet/zay_shop/src/assets/shop_08.jpg
+file:////home/kibet/zay_shop/src/assets/shop_09.jpg
+file:////home/kibet/zay_shop/src/assets/shop_10.jpg
+file:////home/kibet/zay_shop/src/assets/shop_11.jpg
+file:////home/kibet/zay_shop/src/data.js
+file:////home/kibet/zay_shop/src/index.js
+file:////home/kibet/zay_shop/src/redux/apiCalls.js
+file:////home/kibet/zay_shop/src/redux/cartRedux.js
+file:////home/kibet/zay_shop/src/redux/store.js
+file:////home/kibet/zay_shop/src/redux/userRedux.js
+file:////home/kibet/zay_shop/src/requestMethods.js

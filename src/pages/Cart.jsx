@@ -1,19 +1,41 @@
 import React, {useState, useEffect} from 'react'
 import { useSelector } from 'react-redux';
 import StripeCheckout from 'react-stripe-checkout';
-const KEY = process.env.REACT_APP_STRIPE
+import { userRequest } from '../requestMethods';
+import {useNavigate} from 'react-router-dom';
+const KEY = 'pk_test_51L7KieIg8e8LStSsenLjrD70R0dtA260zaEvT4Hb2SbjIis2jeLeDJRLSubisjPFAhYr42He7ZnO9qiO54EGuRAY00sqzFRDT3';
 
 
 
 function Cart() {
   const cart = useSelector(state => state.cart);
   const [stripeToken, setStripeToken] = useState(null);
+  const navigate = useNavigate();
+
   const onToken = (token) => {
       setStripeToken(token);
   }
 
+  useEffect(() => {
+    const makeRequest = async () => {
+      try{
+        const res = await userRequest.post('/checkout/payment', {
+          tokenId: stripeToken.id,
+          amount: cart.total * 100,
+        })
+        alert('payment successful')
+        navigate('/shop')
+      } catch (err) {
+        console.log(err)
+
+      }
+    }
+
+    stripeToken && cart.total >= 1 && makeRequest();
+  }, [stripeToken, cart.total, navigate])
+
   return (
-<section class="h-100 h-custom" style={{backgroundColor: "#d2c9ff"}}>
+<section class="h-100 h-custom cart w-100" >
   <div class="container py-2 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12">
@@ -21,7 +43,7 @@ function Cart() {
           <div class="card-body p-0">
             <div class="row g-0">
               <div class="col-lg-8">
-                <div class="p-5">
+                <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center mb-5">
                     <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
                     <h6 class="mb-0 text-muted">3 items</h6>
@@ -30,7 +52,7 @@ function Cart() {
                   {
                     cart.products.map(product => {
                       return (
-                        <div class="row mb-4 d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary">
+                        <div class="row mb-2 d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary">
                         <div class="col-md-2 col-lg-2 col-xl-2">
                           <img
                             src={product.img}
@@ -75,7 +97,7 @@ function Cart() {
               </div>
               <div class="col-lg-4 bg-grey">
                 <div class="p-5">
-                  <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                  <h3 class="fw-bold mb-3 mt-2 pt-1">Summary</h3>
                   <hr class="my-4" />
 
                   <div class="d-flex justify-content-between mb-4">
@@ -100,10 +122,11 @@ function Cart() {
 
                                 {stripeToken ? (<span>processing Pease Wait</span>) :
             (<StripeCheckout
-            name='nutricon'
+            name='zay shop'
             image=''
             billingAddress
-            shippingAddress = 'You total is $20'
+            shippingAddress
+            description={`Your total is ${cart.total}`}
             amount={cart.total * 100}
             token={onToken} 
             stripeKey={KEY}>

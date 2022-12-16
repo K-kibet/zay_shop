@@ -1,0 +1,61 @@
+ :root{
+    --white: #fff;
+    --primary: #0d6efd;
+    --success: rgb(25,135,84);
+    --light: #fff;
+ }
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+
+}
+
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+}

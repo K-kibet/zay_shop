@@ -6,14 +6,13 @@ import Image4 from '../assets/brand_04.png';
 
 const Brands = () => {
     return (
-        <section class="bg-light py-5">
-        <div class="container my-4">
-            <div class="row text-center py-3">
+        <section class="bg-light py-3">
+        <div class="container my-2">
+            <div class="row text-center py-2">
                 <div class="col-lg-6 m-auto">
                     <h1 class="h1">Our Brands</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        Lorem ipsum dolor sit amet.
+                        We are the best vendor of trusted products
                     </p>
                 </div>
                 <div class="col-lg-9 m-auto tempaltemo-carousel">

@@ -1,0 +1,163 @@
+
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.admin{
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.admin .wrapper{
+    flex: 3;
+    height: 100%;
+}
+
+.sidebar {
+    min-width: 250px;
+    flex: 1;
+    height: 100%;
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+    top: 50px;
+  }
+  
+  .sidebarWrapper {
+    padding: 20px;
+    color: #555;
+  }
+  
+  .sidebarMenu {
+    margin-bottom: 10px;
+  }
+  
+  .sidebarTitle {
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+  }
+  
+  .sidebarList {
+    list-style: none;
+    padding: 5px;
+  }
+  
+  .sidebarListItem {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .sidebarListItem.active,
+  .sidebarListItem:hover {
+    background-color: rgb(240, 240, 255);
+  }
+  
+  .sidebarIcon{
+      margin-right: 5px;
+      font-size: 20px !important;
+  }
+  
+
+
+  .newUser {
+    flex: 4;
+  }
+  
+  .newUserForm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .newUserItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .newUserItem > label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+  }
+  
+  .newUserItem > input {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .newUserGender > input {
+    margin-top: 15px;
+  }
+  
+  .newUserGender>label{
+      margin: 10px;
+      font-size: 18px;
+      color: #555;
+  }
+  
+  .newUserSelect{
+      height: 40px;
+      border-radius: 5px;
+  }
+  
+  .newUserButton{
+      width: 200px;
+      border: none;
+      background-color: darkblue;
+      color: white;
+      padding: 7px 10px;
+      font-weight: 600;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+  }
+
+  .newProduct {
+    flex: 4;
+  }
+  
+  .addProductForm {
+    margin-top: 10px;
+  }
+  
+  .addProductItem {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .addProductItem > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .addProductItem > input {
+    padding: 10px;
+  }
+  
+  .addProductItem > select {
+    padding: 10px;
+  }
+  
+  .addProductButton {
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
